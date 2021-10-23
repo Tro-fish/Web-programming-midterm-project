@@ -1,0 +1,109 @@
+.page_set
+{
+    display: block;
+    width : 100%;
+    height: 950px;
+    margin : 0px;
+    padding : 0px;
+    background-color : #ECF5FF;       
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+.back_set
+{
+    background-color : #ECF5FF;  
+}
+.num_button
+{
+    width: 80px;
+    height: 80px;
+    margin :10px;
+    border: 1px solid black;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(6, 116, 136, 0.5), 0 2px 4px -1px rgba(6, 116, 136, 0.5);
+}
+.return_card
+{
+    border: 4px solid red; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
+    background-color:rgb(253, 98, 98);
+    color: white; 
+    margin-top:30px;
+    margin-left: 62%; 
+    width : 150px; 
+    height:55px;
+    font-size: 20px;
+}
+.back{
+
+    border: 4px solid red; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
+    background-color:rgb(253, 98, 98);
+    color: white; 
+    margin-top:30px;
+    margin-left: 93%; 
+    width : 100px; 
+    height:55px;
+    font-size: 20px;
+}
+.back:hover{
+    background-color: rgb(77, 77, 77);
+}
+.welcome
+{
+    width :600px; 
+    height: 70px; 
+    background-color: rgb(55, 59, 83);
+    border :3px solid black;
+    border-radius: 2px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: lighter;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+}
+.welcome:hover{
+    background:rgb(113, 175, 197) ;
+}
+
+.info_gray
+{
+    background-color: rgb(180, 180, 180);
+    height: 30px;
+}
+
+.info_white
+{
+    background-color: white;
+    height: 30px;
+}
+.withdraw_button{
+    background-color: rgb(3, 53, 85); 
+    color : white;
+    width :110px; 
+    height: 70px; 
+    border : 4px solid black;
+    border-radius: 5px;
+    font-size: 27px;
+    margin-top : 50px;
+}
+.back_wt{
+
+    border: 4px solid red; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
+    background-color:rgb(253, 98, 98);
+    color: white; 
+    margin-top:50px;   
+    width :110px; 
+    height: 70px; 
+    font-size: 25px;
+}
+.img_btn{
+    border: none;background-color:#ECF5FF;
+}

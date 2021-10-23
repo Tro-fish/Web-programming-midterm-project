@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang ="en" class = "back_set">
+    <head>
+        <meta charset="utf-8">
+        <title>SKKU BANK</title>
+        <link rel ="stylesheet" type="text/css" href = "style.css">
+        <script src ="back.js"></script>
+    </head>
+    <body>
+       <div id ="page1" class ="page_set" style ="display: none;">
+        <form>
+           <center>
+            <h1 style="margin: 0px;padding: 0px; font-size: 90px;color :rgb(101, 146, 228)">SKKU ATM</h1>
+            <h2 style="font-weight: lighter;">Enter your 16 digit account number or insert your card below:</h2>
+            <input id ="account" type ="text" name = "account_num" style ="width:400px; height:40px; text-align: center; font-size: 30px;color: rgb(168, 168, 168);" value="Enter Account Number">
+            <div style="margin-top: 10px;">
+                <button class = "num_button" onclick ="button_1()">  1</button>
+                <button class = "num_button" onclick ="button_2()">  2</button>
+                <button class = "num_button" onclick ="button_3()">  3</button>
+            </div>
+            <div>
+                <button class = "num_button" onclick ="button_4()">  4</button>
+                <button class = "num_button" onclick ="button_5()">  5</button>
+                <button class = "num_button" onclick ="button_6()">  6</button>
+            </div>
+            <div>
+                <button class = "num_button" onclick ="button_7()">  7</button>
+                <button class = "num_button" onclick ="button_8()">  8</button>
+                <button class = "num_button" onclick ="button_9()">  9</button>
+            </div>
+            <div>
+                <button class = "num_button" onclick ="enter1()" style ="color : green">  Enter</button>
+                <button class = "num_button" onclick ="button_0()">  0</button>
+                <button class = "num_button" style="color : red">Delete</button>
+            </div>
+            </center>
+            
+        </form>
+       </div>
+
+       <div id ="page2" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+                <h2 style="font-weight: lighter;">Please enter you PIN</h2>
+                <input id ="account" type ="text" name = "account_num" style ="width:250px; height:40px; text-align: center; font-size: 30px;color: rgb(168, 168, 168);" value="Enter PIN">
+                <div style="margin-top: 10px;">
+                    <button class = "num_button" onclick ="button_1()">  1</button>
+                    <button class = "num_button" onclick ="button_2()">  2</button>
+                    <button class = "num_button" onclick ="button_3()">  3</button>
+                </div>
+                <div>
+                    <button class = "num_button" onclick ="button_4()">  4</button>
+                    <button class = "num_button" onclick ="button_5()">  5</button>
+                    <button class = "num_button" onclick ="button_6()">  6</button>
+                </div>
+                <div>
+                    <button class = "num_button" onclick ="button_7()">  7</button>
+                    <button class = "num_button" onclick ="button_8()">  8</button>
+                    <button class = "num_button" onclick ="button_9()">  9</button>
+                </div>
+                <div>
+                    <button class = "num_button" onclick ="enter1()" style ="color : green">  Enter</button>
+                    <button class = "num_button" onclick ="button_0()">  0</button>
+                    <button class = "num_button" style="color : red">Delete</button>
+                </div>
+            </center>
+                <button class ="return_card" >Return Card</button>
+        </form>
+       </div>
+
+       <div id ="page3" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">WELCOME TO SKKU BANK</h1>
+            <div style ="display: flex; flex-direction: column; align-items: center;">
+            <button class ="welcome" style="color: white;">Account Information</button>
+            <button class ="welcome" style="color: white;">Withdraw Funds</button>
+            <button class ="welcome" style="color: white;">Deposit Funds</button>
+            <button class ="welcome" style="color: white;">Transfer</button>
+            </div>
+            </center>
+            <button class ="return_card" >Return Card</button>
+        </form>
+       </div>
+
+       <div id ="page4" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">WELCOME TO SKKU BANK</h1>
+            <div style ="display: flex; flex-direction: column; align-items: center;">
+            <button class ="welcome" style="color: white;">Account Information</button>
+            <button class ="welcome" style="color: white;">Withdraw Funds</button>
+            <button class ="welcome" style="color: white;">Deposit Funds</button>
+            <button class ="welcome" style="color: white;">Transfer</button>
+            </div>
+            </center>
+            <button class ="return_card" >Return Card</button>
+        </form>
+       </div>
+
+       <div id ="page5" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">Account Information</h1>
+            <h2 style="font-weight: lighter;">Current Balance:<span>$2000</span></h2>  
+            <table style ="width: 100%; border-spacing: 0px;border-collapse: separate;border: 1px solid gray;">               
+                <thead style="height: 30px;">
+                    <tr style ="background-color: white;">
+                        <th style ="width:60%;text-align: left;" >Data</th>
+                        <th style ="width:10%;text-align: left;">Funds Out</th>
+                        <th style ="width:10%;text-align: left;">Funds In</th>
+                        <th style ="width:20%;text-align: left;">Running Balance</th>
+                     </tr>
+                </thead>
+                <tbody>
+                     <tr class ="info_gray">
+                        <td>1</td>
+                        <td>둘리</td>
+                        <td>43</td>
+                        <td>43</td>
+                    </tr>
+                     <tr class ="info_white">
+                        <td>2</td>
+                        <td>곰돌이 푸</td>
+                        <td>52</td>
+                        <td>43</td>
+                    </tr>
+                    <tr class ="info_gray">
+                        <td>3</td>
+                        <td>스티치</td>
+                        <td>15</td>
+                        <td>43</td>
+                    </tr>
+                </tbody>               
+            </table>        
+            </center>            
+            <button class ="back" >Back</button>
+        </form>
+       </div>
+
+       <div id ="page6" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">Account Information</h1>
+            <h2 style="font-weight: lighter;">Current Balance:<span>$2000</span></h2>  
+            <table style ="width: 100%; border-spacing: 0px;border-collapse: separate;border: 1px solid gray;">               
+                <thead style="height: 30px;">
+                    <tr style ="background-color: white;">
+                        <th style ="width:60%;text-align: left;" >Data</th>
+                        <th style ="width:10%;text-align: left;">Funds Out</th>
+                        <th style ="width:10%;text-align: left;">Funds In</th>
+                        <th style ="width:20%;text-align: left;">Running Balance</th>
+                     </tr>
+                </thead>
+                <tbody>
+                     <tr class ="info_gray">
+                        <td>1</td>
+                        <td>둘리</td>
+                        <td>43</td>
+                        <td>43</td>
+                    </tr>
+                     <tr class ="info_white">
+                        <td>2</td>
+                        <td>곰돌이 푸</td>
+                        <td>52</td>
+                        <td>43</td>
+                    </tr>
+                    <tr class ="info_gray">
+                        <td>3</td>
+                        <td>스티치</td>
+                        <td>15</td>
+                        <td>43</td>
+                    </tr>
+                </tbody>               
+            </table>        
+            </center>            
+            <button class ="back" >Back</button>
+        </form>
+       </div>
+      
+
+       <div id ="page7" class ="page_set" style ="display: block;">
+        <form>
+            <center>            
+            <h2 style="font-weight: lighter;">Enter the amount to Withdraw</h2>              
+            </center>
+            <div style="display: flex; justify-content: space-between;">
+            <div style ="flex-direction: column;">
+                <div style ="font-size: 20px;">Quick Links</div>
+                <div><button class ="withdraw_button">20</button></div>
+                <div><button class ="withdraw_button">40</button></div>
+                <div><button class ="withdraw_button">60</button></div>
+                <div><button class ="withdraw_button">80</button></div>
+            </div> 
+            <div style ="flex-direction: column;">
+                <div>
+                    <button class ="img_btn">
+                        <img src ="uparrow100copy.png" style="width: 60%;margin-top:30px">
+                    </button>
+                </div>
+                <div>
+                    <button class ="img_btn">
+                        <img src ="uparrow20copy.png" style="width: 60%;margin-top:10px">
+                    </button>
+                </div>
+                <div>
+                    <button class ="img_btn">
+                        <img src ="uparrow100copy.png" style="width: 60%;margin-top:10px">
+                    </button>
+                </div>
+                <div>
+                    <button class ="img_btn">
+                        <img src ="downarrow20copy.png" style="width: 60%;margin-top:10px">
+                    </button>
+                </div>
+                <div>
+                    <button class ="img_btn">
+                        <img src ="downarrow100copy.png" style="width: 60%;margin-top:10px">
+                    </button>
+                </div>
+            </div> 
+            <div style ="flex-direction: column;">
+                <div style ="font-size: 20px;">Quick Links</div>
+                <div><button class ="withdraw_button">100</button></div>
+                <div><button class ="withdraw_button">200</button></div>
+                <div><button class ="withdraw_button">300</button></div>
+                <div><button class ="back_wt" >Back</button></div>
+            </div> 
+         
+
+            </div>       
+            
+        </form>
+       </div>
+
+
+     
+    </body>
+</html>
+
+<script type="text/javascript">
+
+</script>
