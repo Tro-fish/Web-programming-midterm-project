@@ -4,235 +4,351 @@
         <meta charset="utf-8">
         <title>SKKU BANK</title>
         <link rel ="stylesheet" type="text/css" href = "style.css">
-        <script src ="back.js"></script>
+        <script src ="back.js"></script>        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     </head>
     <body>
-       <div id ="page1" class ="page_set" style ="display: none;">
+        <!--Login page(id)-->
+       <div id ="page1" class ="page_set ">
         <form>
            <center>
-            <h1 style="margin: 0px;padding: 0px; font-size: 90px;color :rgb(101, 146, 228)">SKKU ATM</h1>
-            <h2 style="font-weight: lighter;">Enter your 16 digit account number or insert your card below:</h2>
-            <input id ="account" type ="text" name = "account_num" style ="width:400px; height:40px; text-align: center; font-size: 30px;color: rgb(168, 168, 168);" value="Enter Account Number">
-            <div style="margin-top: 10px;">
-                <button class = "num_button" onclick ="button_1()">  1</button>
-                <button class = "num_button" onclick ="button_2()">  2</button>
-                <button class = "num_button" onclick ="button_3()">  3</button>
+            <h1 class ="page1_text">SKKU ATM</h1>
+            <h2 class ="light_font">Enter your 16 digit account number or insert your card below:</h2>
+            <input id ="account" type ="text" name = "account_num" class ="EnterAccountnumber" value="Enter Account Number">
+            <div class ="top10">
+                <input type="button" class = "num_button" onclick ="button_1()" value="1">
+                <input type="button" class = "num_button" onclick ="button_2()" value="2">
+                <input type="button" class = "num_button" onclick ="button_3()" value="3">
             </div>
             <div>
-                <button class = "num_button" onclick ="button_4()">  4</button>
-                <button class = "num_button" onclick ="button_5()">  5</button>
-                <button class = "num_button" onclick ="button_6()">  6</button>
+                <input type="button" class = "num_button" onclick ="button_4()" value="4">
+                <input type="button" class = "num_button" onclick ="button_5()" value="5">
+                <input type="button" class = "num_button" onclick ="button_6()" value="6">
             </div>
             <div>
-                <button class = "num_button" onclick ="button_7()">  7</button>
-                <button class = "num_button" onclick ="button_8()">  8</button>
-                <button class = "num_button" onclick ="button_9()">  9</button>
+                <input type="button" class = "num_button" onclick ="button_7()" value="7">
+                <input type="button" class = "num_button" onclick ="button_8()" value="8">
+                <input type="button" class = "num_button" onclick ="button_9()" value="9">
             </div>
             <div>
-                <button class = "num_button" onclick ="enter1()" style ="color : green">  Enter</button>
-                <button class = "num_button" onclick ="button_0()">  0</button>
-                <button class = "num_button" style="color : red">Delete</button>
+                <input type ="button" class = "num_button green" onclick ="enter1()" value="Enter"></input>
+                <input type="button" class = "num_button" onclick ="button_0()" value="0">
+                <input type ="button" class = "num_button red" onclick ="del1()" value="Delete"></input>
             </div>
             </center>
             
         </form>
        </div>
-
-       <div id ="page2" class ="page_set" style ="display: none;">
+       <!--Login page(password)-->
+       <div id ="page2" class ="page_set display_none">
         <form>
             <center>
-                <h2 style="font-weight: lighter;">Please enter you PIN</h2>
-                <input id ="account" type ="text" name = "account_num" style ="width:250px; height:40px; text-align: center; font-size: 30px;color: rgb(168, 168, 168);" value="Enter PIN">
-                <div style="margin-top: 10px;">
-                    <button class = "num_button" onclick ="button_1()">  1</button>
-                    <button class = "num_button" onclick ="button_2()">  2</button>
-                    <button class = "num_button" onclick ="button_3()">  3</button>
+                <h2 class ="font_light">Please enter you PIN</h2>
+                <input id ="account2" class ="account_num" type ="text" name = "account_num" value="Enter PIN">
+                <div class ="top10">
+                    <input type="button" class = "num_button" onclick ="button_1()" value="1">
+                    <input type="button" class = "num_button" onclick ="button_2()" value="2">
+                    <input type="button" class = "num_button" onclick ="button_3()" value="3">
                 </div>
                 <div>
-                    <button class = "num_button" onclick ="button_4()">  4</button>
-                    <button class = "num_button" onclick ="button_5()">  5</button>
-                    <button class = "num_button" onclick ="button_6()">  6</button>
+                    <input type="button" class = "num_button" onclick ="button_4()" value="4">
+                    <input type="button" class = "num_button" onclick ="button_5()" value="5">
+                    <input type="button" class = "num_button" onclick ="button_6()" value="6">
                 </div>
                 <div>
-                    <button class = "num_button" onclick ="button_7()">  7</button>
-                    <button class = "num_button" onclick ="button_8()">  8</button>
-                    <button class = "num_button" onclick ="button_9()">  9</button>
+                    <input type="button" class = "num_button" onclick ="button_7()" value="7">
+                    <input type="button" class = "num_button" onclick ="button_8()" value="8">
+                    <input type="button" class = "num_button" onclick ="button_9()" value="9">
                 </div>
                 <div>
-                    <button class = "num_button" onclick ="enter1()" style ="color : green">  Enter</button>
-                    <button class = "num_button" onclick ="button_0()">  0</button>
-                    <button class = "num_button" style="color : red">Delete</button>
+                    <input type ="button" class = "num_button green" onclick ="enter2()" value="Enter"></input>
+                    <input type="button" class = "num_button" onclick ="button_0()" value="0">
+                    <input type ="button" class = "num_button red" onclick ="del1()" value="Delete"></input>
                 </div>
             </center>
                 <button class ="return_card" >Return Card</button>
         </form>
        </div>
-
-       <div id ="page3" class ="page_set" style ="display: none;">
+       <!--skku bank menu-->
+       <div id ="page3" class ="page_set display_none">
         <form>
             <center>
-            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">WELCOME TO SKKU BANK</h1>
-            <div style ="display: flex; flex-direction: column; align-items: center;">
-            <button class ="welcome" style="color: white;">Account Information</button>
-            <button class ="welcome" style="color: white;">Withdraw Funds</button>
-            <button class ="welcome" style="color: white;">Deposit Funds</button>
-            <button class ="welcome" style="color: white;">Transfer</button>
+            <h1 class ="skku_bank">WELCOME TO SKKU BANK</h1>
+            <div class ="menu">
+            <input type ="button" onclick="info()" class ="welcome white"  value ="Account Information"></input>
+            <input type ="button" onclick="withdraw()" class ="welcome white"  value = "Withdraw Funds"></input>
+            <input type ="button" onclick="deposit()" class ="welcome white"  value ="Deposit Funds"></input>
+            <input type ="button" onclick="transfer()" class ="welcome white"  value ="Transfer"></input>
             </div>
             </center>
             <button class ="return_card" >Return Card</button>
         </form>
        </div>
 
-       <div id ="page4" class ="page_set" style ="display: none;">
+    <!--Account information-->
+       <div id ="page5" class ="page_set display_none" >
         <form>
             <center>
-            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">WELCOME TO SKKU BANK</h1>
-            <div style ="display: flex; flex-direction: column; align-items: center;">
-            <button class ="welcome" style="color: white;">Account Information</button>
-            <button class ="welcome" style="color: white;">Withdraw Funds</button>
-            <button class ="welcome" style="color: white;">Deposit Funds</button>
-            <button class ="welcome" style="color: white;">Transfer</button>
-            </div>
-            </center>
-            <button class ="return_card" >Return Card</button>
-        </form>
-       </div>
-
-       <div id ="page5" class ="page_set" style ="display: none;">
-        <form>
-            <center>
-            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">Account Information</h1>
-            <h2 style="font-weight: lighter;">Current Balance:<span>$2000</span></h2>  
-            <table style ="width: 100%; border-spacing: 0px;border-collapse: separate;border: 1px solid gray;">               
-                <thead style="height: 30px;">
-                    <tr style ="background-color: white;">
-                        <th style ="width:60%;text-align: left;" >Data</th>
-                        <th style ="width:10%;text-align: left;">Funds Out</th>
-                        <th style ="width:10%;text-align: left;">Funds In</th>
-                        <th style ="width:20%;text-align: left;">Running Balance</th>
+            <h1 class ="skku_bank">Account Information</h1>
+            <h2 class ="font_light" id= "current_balance">Current Balance:<span>$2000</span></h2>  
+            <table class ="table_set">               
+                <thead class ="height_30">
+                    <tr class = "back_white">
+                        <th class ="table_data" >Data</th>
+                        <th class ="table_out">Funds Out</th>
+                        <th class ="table_in">Funds In</th>
+                        <th class ="table_balance">Running Balance</th>
                      </tr>
                 </thead>
-                <tbody>
-                     <tr class ="info_gray">
-                        <td>1</td>
-                        <td>둘리</td>
-                        <td>43</td>
-                        <td>43</td>
-                    </tr>
-                     <tr class ="info_white">
-                        <td>2</td>
-                        <td>곰돌이 푸</td>
-                        <td>52</td>
-                        <td>43</td>
-                    </tr>
-                    <tr class ="info_gray">
-                        <td>3</td>
-                        <td>스티치</td>
-                        <td>15</td>
-                        <td>43</td>
-                    </tr>
+                <tbody id = "table_body">                                         
                 </tbody>               
             </table>        
             </center>            
-            <button class ="back" >Back</button>
+            <input type ="button" class ="back" onclick="account_back()" value="back"></input>
         </form>
        </div>
 
-       <div id ="page6" class ="page_set" style ="display: none;">
-        <form>
-            <center>
-            <h1 style="margin: 0px;padding: 0px; font-size: 50px;font-weight:lighter;color :rgb(101, 146, 228)">Account Information</h1>
-            <h2 style="font-weight: lighter;">Current Balance:<span>$2000</span></h2>  
-            <table style ="width: 100%; border-spacing: 0px;border-collapse: separate;border: 1px solid gray;">               
-                <thead style="height: 30px;">
-                    <tr style ="background-color: white;">
-                        <th style ="width:60%;text-align: left;" >Data</th>
-                        <th style ="width:10%;text-align: left;">Funds Out</th>
-                        <th style ="width:10%;text-align: left;">Funds In</th>
-                        <th style ="width:20%;text-align: left;">Running Balance</th>
-                     </tr>
-                </thead>
-                <tbody>
-                     <tr class ="info_gray">
-                        <td>1</td>
-                        <td>둘리</td>
-                        <td>43</td>
-                        <td>43</td>
-                    </tr>
-                     <tr class ="info_white">
-                        <td>2</td>
-                        <td>곰돌이 푸</td>
-                        <td>52</td>
-                        <td>43</td>
-                    </tr>
-                    <tr class ="info_gray">
-                        <td>3</td>
-                        <td>스티치</td>
-                        <td>15</td>
-                        <td>43</td>
-                    </tr>
-                </tbody>               
-            </table>        
-            </center>            
-            <button class ="back" >Back</button>
-        </form>
-       </div>
-      
-
-       <div id ="page7" class ="page_set" style ="display: block;">
+       <!--Withdraw page-->
+       <div id ="page7" class ="page_set display_none">
         <form>
             <center>            
-            <h2 style="font-weight: lighter;">Enter the amount to Withdraw</h2>              
+            <h2 class ="font_light">Enter the amount to Withdraw</h2>              
             </center>
-            <div style="display: flex; justify-content: space-between;">
-            <div style ="flex-direction: column;">
+            <div class ="display_space">
+            <div class ="flex_column">
                 <div style ="font-size: 20px;">Quick Links</div>
-                <div><button class ="withdraw_button">20</button></div>
-                <div><button class ="withdraw_button">40</button></div>
-                <div><button class ="withdraw_button">60</button></div>
-                <div><button class ="withdraw_button">80</button></div>
+                <div><input type ="button" onclick ="with20()"  class ="withdraw_button_1" value ="20"></input></div>
+                <div><input type ="button" onclick ="with40()" class ="withdraw_button" value ="40"></input></div>
+                <div><input type ="button" onclick ="with60()" class ="withdraw_button" value ="60"></input></div>
+                <div><input type ="button" onclick ="with80()" class ="withdraw_button" value="80"></input></div>
             </div> 
-            <div style ="flex-direction: column;">
+            <div style ="flex-direction: column;margin-left: 150px;">
                 <div>
-                    <button class ="img_btn">
-                        <img src ="uparrow100copy.png" style="width: 60%;margin-top:30px">
+                    <button type ="button" class ="img_btn" onclick="wt_up100()">
+                        <img id ="up100" src ="uparrow100copy.png" class ="wi_50_to_30">
                     </button>
                 </div>
                 <div>
-                    <button class ="img_btn">
-                        <img src ="uparrow20copy.png" style="width: 60%;margin-top:10px">
+                    <button type ="button" class ="img_btn" onclick="wt_up20()">
+                        <img id ="up20" src ="uparrow20copy.png" class ="wi_50_to_10">
                     </button>
                 </div>
                 <div>
-                    <button class ="img_btn">
-                        <img src ="uparrow100copy.png" style="width: 60%;margin-top:10px">
+                    <input id ="account_balance"  type ="text" name = "account_num" value="0">
+                    <button type ="button" class ="enter_wt left_150" onclick ="wt_enter()">Enter</button>
+                </div>
+                <div>
+                    <button type ="button" class ="img_btn" onclick="wt_down20()">
+                        <img id ="down20" src ="downarrow20copy.png" class ="wi_50_to_10">
                     </button>
                 </div>
                 <div>
-                    <button class ="img_btn">
-                        <img src ="downarrow20copy.png" style="width: 60%;margin-top:10px">
-                    </button>
-                </div>
-                <div>
-                    <button class ="img_btn">
-                        <img src ="downarrow100copy.png" style="width: 60%;margin-top:10px">
+                    <button type ="button" class ="img_btn" onclick="wt_down100()">
+                        <img id ="down100" src ="downarrow100copy.png" class ="wi_50_to_10">
                     </button>
                 </div>
             </div> 
-            <div style ="flex-direction: column;">
+            <div class ="flex_column">
                 <div style ="font-size: 20px;">Quick Links</div>
-                <div><button class ="withdraw_button">100</button></div>
-                <div><button class ="withdraw_button">200</button></div>
-                <div><button class ="withdraw_button">300</button></div>
-                <div><button class ="back_wt" >Back</button></div>
+                <div><input type ="button" onclick ="with100()"  class ="withdraw_button_1" value ="100"></input></div>
+                <div><input type ="button" onclick ="with200()" class ="withdraw_button" value ="200"></input></div>
+                <div><input type ="button" onclick ="with300()" class ="withdraw_button" value ="300"></input></div>
+                <div><button type ="button" class ="back_wt" onclick ="wt_back()"  >Back</button></div>
             </div> 
-         
-
-            </div>       
-            
+            </div>                   
         </form>
        </div>
 
+       <!--Withdraw complete-->
+       <div id ="page8" class ="page_set display_none" >
+            <center>            
+            <h2 class ="font_light">Money has been withdrawn.</h2>
+            <img class="top_70" src ="checkmark.png">       
+            <div>
+                <input type ="button" onclick ="wt_home()" class ="home_button" value ="Home"></input>
+                <input type ="button" onclick ="wt_with()" class ="another_button" value ="Perform Another Withdraw"></input>
+                <input type ="button" onclick="wt_re()" class ="wt_rt_button" value ="Return Card"></input>
+            </div>       
+            </center>            
+       </div>
+
+     
+       <!--Withdraw check-->
+      <div id ="page10" class ="page_set display_none" >
+        <center>            
+            <h1 class ="skku_bank font_90">Withdraw</h1>
+            <h1 class="font_60 top_20"  id="withmoney" ></h1>
+            <input type ="button" onclick="wt_yes()" class ="enter_wt right_50 top_50" value ="YES"></button>
+            <input type ="button" onclick ="wt_no()" class ="back_wt top_50" value ="NO"></button>
+
+        </center>            
+      </div>
+
+      <!--Deposit page-->
+      <div id="page11" class ="page_set" style ="display: none;">
+        <form>
+            <center>
+                <h2>Enter the amount to deposit</h2>
+                <input id ="deposit_account" type ="text" name = "account_num" value="$0000.00">
+                <div class ="top_10">
+                    <button type="button" class = "num_button" onclick ="d_button1()">  1</button>
+                    <button type="button" class = "num_button" onclick ="d_button2()">  2</button>
+                    <button type="button" class = "num_button" onclick ="d_button3()">  3</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="d_button4()">  4</button>
+                    <button type="button" class = "num_button" onclick ="d_button5()">  5</button>
+                    <button type="button" class = "num_button" onclick ="d_button6()">  6</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="d_button7()">  7</button>
+                    <button type="button" class = "num_button" onclick ="d_button8()">  8</button>
+                    <button type="button" class = "num_button" onclick ="d_button9()">  9</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="d_button_0()">  0</button>
+                    <button type="button" class = "num_button" onclick ="d_button_p()">  .</button>
+                    <button type="button" class = "num_button red" onclick="d_del()" >Del</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button d_enter" onclick ="d_button_enter()">Enter</button>
+                </div>
+            </center>
+                <button type ="button" onclick ="de_back()" class ="return_card" >Back</button>
+        </form>
+      </div>
+
+      <!--Deposit check2-->
+      <div id ="page12" class ="page_set display_none">
+        <center>            
+            <h1 class ="skku_bank font_40">Are you sure you want to deposit the amount specified?</h1>
+            <h1 id="deposit_num" class="font_60 top_20" >$50?</h1>
+            <button type ="button" onclick="deposit_yes()" class ="enter_wt" >Yes</button>
+            <button type ="button" onclick="deposit_no()" class ="back_wt top_50">No</button>
+
+        </center>            
+      </div>
+
+      <!--Deposit check1-->
+      <div id ="page13" class ="page_set display_none" >
+        <center>            
+          
+            <h1 class="font_60 top_20" >Enter the specified amount of money into the ATM.</h1>
+            <button type ="button" onclick="deposit_ok()"  class = "num_button specified">  OK</button>
+
+        </center>            
+      </div>       
+
+      <!--Deposit complete-->
+      <div id ="page14" class ="page_set display_none">
+        <center>            
+        <h2 class ="font_light">Money has been deposited.</h2>
+        <img class ="top_70" src ="checkmark.png">       
+        <div>
+            <input type ="button" onclick ="de_home()" class ="home_button" value ="Home"></input>
+            <input type ="button" onclick ="de_deposit()" class ="another_button" value ="Deposit again"></input>
+            <input type ="button" onclick="de_re()" class ="wt_rt_button" value ="Return Card"></input>
+        </div>       
+        </center>            
+      </div>
+
+    <!--Money transfer-->
+    <div id ="page15" class ="page_set display_none">
+        <form>
+            
+            <div class ="display_space">
+
+            <div class ="flex_column left_250">
+              <h1 class ="skku_bank left_30">From</h1>
+              <div class="dropdown">
+                <button type ="button" class="btn btn-secondary dropdown-toggle from" type="button" id="from" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose an Account
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                  <li>
+                    <button type ="button" class="dropbutton" onclick ="ts_from()">
+                      1234567890123456
+                    </button>
+                </li>
+                </ul>
+              </div>
+            </div> 
+
+            <div style ="flex-direction: column;">
+                <input id ="transfer_account" type ="text" name = "account_num" value="$0000.00">
+                <div class ="top_10">
+                    <button type="button" class = "num_button" onclick ="t_button1()">  1</button>
+                    <button type="button" class = "num_button" onclick ="t_button2()">  2</button>
+                    <button type="button" class = "num_button" onclick ="t_button3()">  3</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="t_button4()">  4</button>
+                    <button type="button" class = "num_button" onclick ="t_button5()">  5</button>
+                    <button type="button" class = "num_button" onclick ="d_button6()">  6</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="t_button7()">  7</button>
+                    <button type="button" class = "num_button" onclick ="t_button8()">  8</button>
+                    <button type="button" class = "num_button" onclick ="t_button9()">  9</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button" onclick ="t_button_0()">  0</button>
+                    <button type="button" class = "num_button" onclick ="t_button_p()">  .</button>
+                    <button type="button" class = "num_button red" onclick="t_del()" >Del</button>
+                </div>
+                <div>
+                    <button type="button" class = "num_button green_280" onclick ="t_button_enter()">  Enter</button>
+                </div>
+            </div> 
+
+            <div class ="flex_column right_250">
+                <h1 class ="skku_bank left_60">To</h1>
+                <div class="dropdown">
+                    <button type ="button" class="btn btn-secondary dropdown-toggle to" type="button" id="to" data-bs-toggle="dropdown" aria-expanded="false">
+                      Choose an Account
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                      <li>
+                        <button type ="button" class="dropbutton" onclick="ts_to()">
+                            1234579109523489
+                        </button>
+                    </li>
+                    </ul>
+            </div>
+
+            </div> 
+        </div>                   
+        </form>
+    </div>
+
+    <!--Transfer check-->
+    <div id ="page16" class ="page_set display_none">
+        <center>            
+            <h1 class ="font_60 skku_bank" >Transfer</h1>
+            <h1 id="transfer_num"></h1>
+            <h1 id="transfer_from"></h1>
+            <h1 id="transfer_to"></h1>
+            <button type ="button" onclick="transfer_yes()" class ="enter_wt right_50 top_50">Yes</button>
+            <button type ="button" onclick="transfer_no()" class ="back_wt top_50">No</button>
+        </center>            
+      </div>
+
+      <!--Transfer complete-->
+      <div id ="page17" class ="page_set display_none">
+        <center>            
+        <h2 class ="font_light">Money has been transterred.</h2>
+        <img class ="top_70" src ="checkmark.png">       
+        <div>
+            <input type ="button" onclick ="tr_home()" class ="home_button" value ="Home"></input>
+            <input type ="button" onclick ="tr_trans()" class ="another_button" value ="Perform Anoter Transaction"></input>
+            <input type ="button" onclick="tr_re()" class ="wt_rt_button" value ="Return Card"></input>
+        </div>       
+        </center>            
+      </div>
 
      
     </body>
